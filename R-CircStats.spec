@@ -11,8 +11,14 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.2-4.tar.gz
 BuildArch:        noarch
 Requires:         R-core
-Requires:         R-MASS R-boot 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS R-boot
+Requires:         R-MASS
+Requires:         R-boot 
+BuildRequires:    R-devel
+BuildRequires:    Rmath-devel
+BuildRequires:    texlive-collection-latex
+BuildRequires:    R-MASS
+BuildRequires:    R-boot
+BuildRequires:    pkgconfig(lapack)
 
 %description
 Circular Statistics, from "Topics in circular Statistics" (2001) S. Rao
@@ -42,3 +48,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
+
+
+%changelog
+* Mon Feb 20 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2_4-1
++ Revision: 777606
+- Import R-CircStats
+- Import R-CircStats
+
