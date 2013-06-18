@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          0.2_4
-Release:          1
+Release:          2
 Summary:          Circular Statistics, from "Topics in circular Statistics" (2001)
 Group:            Sciences/Mathematics
 License:          GPL-2
