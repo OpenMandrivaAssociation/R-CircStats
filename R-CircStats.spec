@@ -9,6 +9,7 @@ Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.2-4.tar.gz
+Source1:          NAMESPACE
 BuildArch:        noarch
 Requires:         R-core
 Requires:         R-MASS
@@ -26,6 +27,7 @@ Jammalamadaka and A. SenGupta, World Scientific.
 
 %prep
 %setup -q -c -n %{packname}
+cp %{SOURCE1} %{packname}/
 
 %build
 
@@ -48,11 +50,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
-
-
-%changelog
-* Mon Feb 20 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2_4-1
-+ Revision: 777606
-- Import R-CircStats
-- Import R-CircStats
 
