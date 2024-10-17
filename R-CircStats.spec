@@ -7,7 +7,7 @@ Release:          3
 Summary:          Circular Statistics, from "Topics in circular Statistics" (2001)
 Group:            Sciences/Mathematics
 License:          GPL-2
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.2-4.tar.gz
 Source1:          NAMESPACE
 BuildArch:        noarch
